@@ -7,18 +7,18 @@
 Note: The detailed information about each variable can be foung in the "CodeBook.Rmd"" file and the corresponding script for each of the steps below can be found in the "run_analysis.R"" file  
 
 
-### Here are the steps starting from downloading the data until teh Tidy data is ready:
+### Here are the steps starting from downloading the data until the Tidy data is ready:
 
-* Download the data to a temporary fiel using the temporary () function and the donwload.file function
+* Download the data to a temporary file using the temporary () function and the donwload.file function
 * List the files. The aim of this step is to be able to see all files and decide on which to unzip
-* Unzip the files that are required for the transormation of teh data to a Tidy data. Those included:
-        * y_test data
-        * x_test data
-        * subect_test data
-        * y_train data
-        * x_train data
-        * subject_train data
-        * features data
+* Unzip the files that are required for the transormation of the data to a Tidy data. Those included:
+        ** y_test data
+        ** x_test data
+        ** subect_test data
+        ** y_train data
+        ** x_train data
+        ** subject_train data
+        ** features data
 * unlink the temporary file
 * Merge the train and test datasets
 * Extracts the names from the Features file  

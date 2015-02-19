@@ -12,13 +12,13 @@ Note: The detailed information about each variable can be foung in the "CodeBook
 * Download the data to a temporary file using the temporary () function and the donwload.file function
 * List the files. The aim of this step is to be able to see all files and decide on which to unzip
 * Unzip the files that are required for the transormation of the data to a Tidy data. Those included:
-        ** y_test data
-        ** x_test data
-        ** subect_test data
-        ** y_train data
-        ** x_train data
-        ** subject_train data
-        ** features data
+        1. y_test data
+        2. x_test data
+        3. subect_test data
+        4. y_train data
+        5. x_train data
+        6. subject_train data
+        7. features data
 * unlink the temporary file
 * Merge the train and test datasets
 * Extracts the names from the Features file  

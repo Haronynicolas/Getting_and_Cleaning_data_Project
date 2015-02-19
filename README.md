@@ -12,6 +12,7 @@ Note: The detailed information about each variable can be foung in the "CodeBook
 * Download the data to a temporary file using the temporary () function and the donwload.file function
 * List the files. The aim of this step is to be able to see all files and decide on which to unzip
 * Unzip the files that are required for the transormation of the data to a Tidy data. Those included:
+        
         1. y_test data
         2. x_test data
         3. subect_test data
@@ -28,12 +29,13 @@ Note: The detailed information about each variable can be foung in the "CodeBook
 * Create a vector with the descriptive activiies names
 * Replace the old numbers/names with the new names 
 * Appropriately rename the data set with descriptive variable names. This included replacing:
-        * Acc by Accelerator
-        * t by Time
-        * f by Frequency
-        * -mean() by Mean 
-        * -std() by StdDev
-        * Mag by Magnitude; Gyro by Gyroscope.
+        
+        1. Acc by Accelerator
+        2. t by Time
+        3. f by Frequency
+        4. -mean() by Mean 
+        5. -std() by StdDev
+        6. Mag by Magnitude; Gyro by Gyroscope.
 * Add activities and subject with nice names and combine them to the the main data set
 * Create a second, independent tidy data set with the average of each variable for each activity and each subject.
 * Save a copy of the data in the working directory        

@@ -1,0 +1,88 @@
+---
+# Code Book:
+  This mark down file describes the data from the human activity experiments using smartphones datasetdata, the variable and the transformation that has been done to clean up the data and get the Tidy data.
+---
+
+## Data Set Information:
+
+
+* The data was collected from experiments that  have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIR 
+  S, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 
+  3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% 
+  of the volunteers was selected for generating the training data and 30% the test data. 
+
+* The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The 
+  sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is 
+  assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time 
+  and frequency domain.
+  
+* In the collected data, there is a single row for each subject on each activity , and a single column for each measurement.
+
+## Transformation of the data to create the tidy data:
+
+### Several steps were completed to transform the original data. 
+
+        * The test and train datasets were  merged
+        * The subject identifiers and activity labels were merged into a single dataset.
+        * The names of the activities were changes with meaningful names
+        * The other variable's names were changed to a more descriptive  names
+        * The mean and standard deviation variables were subseted. 
+        * The average/mean of each of te subseted variable was calculated for each subject on each activity
+        
+* also for the Tidy data there is a single row for each subject on each activity , and a single column for each measurement.
+
+
+
+## Variables:
+  * Subject: is the subject ID - integer - there are 30 subjects in this data set.
+  * Activity: name of activity teh the subjects participated in- string - there are 6 activities:
+        - WALKING, 
+        - WALKING_UPSTAIRS
+        - WALKING_DOWNSTAIRS
+        - SITTING
+        - STANDING
+        - LAYING
+  
+  * All other variables are either the mean or standard deviation (this is indicated in the name of the variable) of a specific measurmnet for each subject on each activity.
+    The measurments include: 
+  
+        * Time domain body acceleration mean along X, Y, and Z
+        * Time domain body acceleration standard deviation along X, Y, and Z
+        * Time domain gravity acceleration mean along X, Y, and Z
+        * Time domain gravity acceleration standard deviation along X, Y, and Z  
+        * Time domain body jerk mean along X, Y, and Z   
+        * Time domain body jerk standard deviation along X, Y, and Z
+        * Time domain gyroscope mean along X, Y, and Z
+        * Time domain gyroscope standard deviation along X, Y, and Z
+        * Time domain gyroscope jerk mean along X, Y, and Z
+        * Time domain gyroscope jerk standard deviation along X, Y, and Z
+        * Time domain body acceleration magnitude mean
+        * Time domain body acceleration magnitude standard deviation
+        * Time domain gravity acceleration magnitude mean
+        * Time domain gravity acceleration magnitude standard deviation
+        * Time domain body jerk magnitude mean
+        * Time domain body jerk magnitude standard deviation
+        * Time domain gyroscope magnitude mean
+        * Time domain gyroscope magnitude standard deviation
+        * Time domain gyroscope jerk magnitude mean
+        * Time domain gyroscope jerk magnitude standard deviation
+        * Frequency domain body acceleration mean along X, Y, and Z
+        * Frequency domain body acceleration standard deviation along X, Y, and Z
+        * Frequency domain body jerk mean along X, Y, and Z
+        * Frequency domain body jerk standard deviation along X, Y, and Z
+        * Frequency domain gyroscope mean along X, Y, and Z
+        * Frequency domain gyroscope standard deviation along X, Y, and Z
+        * Frequency domain body acceleration magnitude mean
+        * Frequency domain body acceleration magnitude standard deviation
+        * Frequency domain body jerk magnitude mean
+        * Frequency domain body jerk magnitude standard deviation
+        * Frequency domain gyroscope magnitude mean
+        * Frequency domain gyroscope magnitude standard deviation
+        * Frequency domain gyroscope jerk magnitude mean
+        * Frequency domain gyroscope jerk magnitude standard deviation
+
+
+
+
+
+
